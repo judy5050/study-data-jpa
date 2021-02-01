@@ -10,6 +10,10 @@ import javax.persistence.*;
 @Setter //setter 은 가급적 엔티티에 없는것이 좋다.
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString(of={"id","username","age"})//연관관계 필드는 tostring 하지 않는것이 좋다.
+@NamedQuery(
+        name="Member.findByUsername",
+        query = "select m from Member m where m.username= :username"
+)
 public class Member {
 
     @Id

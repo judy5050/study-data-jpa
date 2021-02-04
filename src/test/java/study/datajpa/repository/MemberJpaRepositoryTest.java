@@ -92,6 +92,7 @@ class MemberJpaRepositoryTest {
         Member findMember=result.get(0);
         assertThat(findMember).isEqualTo(m1);
 
+        
 
 
 

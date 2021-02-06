@@ -15,3 +15,8 @@ spring:
       logging.level:
         org.hibernate.SQL: debug
       #  org.hibernate.type: trace
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
